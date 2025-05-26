@@ -22,31 +22,31 @@ Perform a TCP SYN scan on the local network and identify active hosts, open port
 ## Scan Command:
 sudo nmap -sS 10.0.2.0/24 -oN scan.txt
 
-##Results:
-Active Hosts and Open Ports:
-Host IP	Open Ports
-10.0.2.2	80, 135, 443, 445, 902, 912, 1433, 3306
-10.0.2.3	80, 135, 443, 445, 902, 912, 1433, 3306
-10.0.2.4	80, 135, 443, 445, 902, 912, 1433, 3306
-10.0.2.15	No open ports (Kali system)
+## Results:
+- Active Hosts and Open Ports:
+- Host IP	Open Ports
+- 10.0.2.2	80, 135, 443, 445, 902, 912, 1433, 3306
+- 10.0.2.3	80, 135, 443, 445, 902, 912, 1433, 3306
+- 10.0.2.4	80, 135, 443, 445, 902, 912, 1433, 3306
+- 10.0.2.15	No open ports (Kali system)
 
-##Common Services:
+## Common Services:
 
-HTTP/HTTPS (Web servers)
+-HTTP/HTTPS (Web servers)
 
-Microsoft RPC and SMB (Windows)
+- Microsoft RPC and SMB (Windows)
 
 MySQL and MSSQL (Databases)
 
 VMware ports (902, 912)
 
-##Security Risks Identified:
+## Security Risks Identified:
 SMB (445) may be exploited via EternalBlue.
 Exposed databases (1433, 3306) vulnerable to brute-force or SQL attacks.
 RPC (135) commonly exploited in Windows vulnerabilities.
 VMware ports may allow remote access if unpatched.
 
-##Recommendations:
+## Recommendations:
 Disable unused services.
 Apply firewall rules to restrict access.
 Keep all systems updated.
