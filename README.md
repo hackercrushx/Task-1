@@ -2,7 +2,7 @@
 Elevate Labs Internship 
 
 Task 1:  Scan Your Local Network for Open Ports
-bjective: Learn to discover open ports on devices in your local network to understand network exposure.
+Objective: Learn to discover open ports on devices in your local network to understand network exposure.
 
  I open up virtual machine beacuse i am more comfortable with Kali Linux than WIndows. So firstly figure out IP address then Run: nmap -sS 192.168.1.0/24 to perform TCP SYN scan, open wireshark filter out with ports and services.
 
