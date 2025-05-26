@@ -31,23 +31,19 @@ sudo nmap -sS 10.0.2.0/24 -oN scan.txt
 - 10.0.2.15	No open ports (Kali system)
 
 ## Common Services:
-
--HTTP/HTTPS (Web servers)
-
+- HTTP/HTTPS (Web servers)
 - Microsoft RPC and SMB (Windows)
-
-MySQL and MSSQL (Databases)
-
-VMware ports (902, 912)
+- MySQL and MSSQL (Databases)
+- VMware ports (902, 912)
 
 ## Security Risks Identified:
-SMB (445) may be exploited via EternalBlue.
-Exposed databases (1433, 3306) vulnerable to brute-force or SQL attacks.
-RPC (135) commonly exploited in Windows vulnerabilities.
-VMware ports may allow remote access if unpatched.
+- SMB (445) may be exploited via EternalBlue.
+- Exposed databases (1433, 3306) vulnerable to brute-force or SQL attacks.
+- RPC (135) commonly exploited in Windows vulnerabilities.
+- VMware ports may allow remote access if unpatched.
 
 ## Recommendations:
-Disable unused services.
-Apply firewall rules to restrict access.
-Keep all systems updated.
-Avoid exposing database ports to public networks.
+- Disable unused services.
+- Apply firewall rules to restrict access.
+- Keep all systems updated.
+- Avoid exposing database ports to public networks.
